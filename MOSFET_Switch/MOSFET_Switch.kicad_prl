@@ -15,17 +15,17 @@
       "zones": 0.6
     },
     "selection_filter": {
-      "dimensions": false,
-      "footprints": false,
+      "dimensions": true,
+      "footprints": true,
       "graphics": true,
-      "keepouts": false,
+      "keepouts": true,
       "lockedItems": false,
-      "otherItems": false,
+      "otherItems": true,
       "pads": true,
-      "text": false,
+      "text": true,
       "tracks": true,
-      "vias": false,
-      "zones": false
+      "vias": true,
+      "zones": true
     },
     "visible_items": [
       0,
@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "LiFePO4_Overcharge_Protection_V2.kicad_prl",
+    "filename": "MOSFET_Switch.kicad_prl",
     "version": 3
   },
   "project": {

@@ -42,7 +42,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
+			(layerselection 0x0000000_7fffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -62,7 +62,7 @@
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(dxfpolygonmode yes)
-			(dxfimperialunits yes)
+			(dxfimperialunits no)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
@@ -72,9 +72,9 @@
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 3)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -2433,7 +2433,7 @@
 		(descr "TO-92L leads in-line (large body variant of TO-92), also known as TO-226, wide, drill 0.75mm (see https://www.diodes.com/assets/Package-Files/TO92L.pdf and http://www.ti.com/lit/an/snoa059/snoa059.pdf)")
 		(tags "TO-92L Inline Wide transistor")
 		(property "Reference" "U1"
-			(at 2.54 -3.56 360)
+			(at 2.54 -3.56 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a67d5d65-ab45-47a3-be8f-f75b2a480e14")
@@ -2445,7 +2445,7 @@
 			)
 		)
 		(property "Value" "TL431LP"
-			(at 2.54 2.79 360)
+			(at 2.54 2.79 0)
 			(layer "F.Fab")
 			(uuid "4435ccb3-d742-489d-994a-4c5d1bdedef1")
 			(effects
@@ -2623,7 +2623,7 @@
 			(uuid "c536ddd6-2143-4149-864f-e0d86f0d214d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 0 360)
+			(at 2.54 0 0)
 			(layer "F.Fab")
 			(uuid "e6464a99-0407-4cf9-b7b9-a8d89d603e16")
 			(effects
@@ -5220,7 +5220,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R1"
-			(at 3.81 0 360)
+			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8c4a8008-1170-4799-844e-9632fb8dd648")
@@ -5232,7 +5232,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 3.81 2.37 360)
+			(at 3.81 2.37 0)
 			(layer "F.Fab")
 			(uuid "a99be2d8-11fd-49e9-8781-885a08b693bd")
 			(effects
@@ -5444,7 +5444,7 @@
 			(uuid "7f029429-1e0b-4642-b9d9-388b5f9a081a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 0 360)
+			(at 3.81 0 0)
 			(layer "F.Fab")
 			(uuid "2e9c3b92-3c08-436e-8d07-03a9a6d7246e")
 			(effects
@@ -9738,6 +9738,14 @@
 		(uuid "0985324b-5d28-48a8-af47-34e173ffa7aa")
 	)
 	(segment
+		(start 170.942 46.736)
+		(end 170.942 54.356)
+		(width 1.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "108b6ad2-58a8-4232-bfbc-d1b11cc15a7b")
+	)
+	(segment
 		(start 139.446 71.628)
 		(end 138.43 70.612)
 		(width 0.7)
@@ -9890,6 +9898,14 @@
 		(uuid "8724fa21-8208-4f3d-b48c-c86bb6db9fc4")
 	)
 	(segment
+		(start 174.752 67.31)
+		(end 176.022 67.31)
+		(width 1.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "872fb9df-c189-414e-89db-786dcd3aee74")
+	)
+	(segment
 		(start 139.954 71.628)
 		(end 139.446 71.628)
 		(width 0.7)
@@ -9938,14 +9954,6 @@
 		(uuid "a82b3db1-76e7-4a1f-9e7b-ad13e6bdcea7")
 	)
 	(segment
-		(start 170.942 46.736)
-		(end 170.942 65.786)
-		(width 1)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "ac5dd9f1-c62f-466e-9830-fcb6ad73666c")
-	)
-	(segment
 		(start 160.02 70.612)
 		(end 159.004 71.628)
 		(width 0.7)
@@ -9970,14 +9978,6 @@
 		(uuid "d0772d75-5f01-450e-80b1-a86a368c3357")
 	)
 	(segment
-		(start 170.942 65.786)
-		(end 172.466 67.31)
-		(width 1)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "d14de0d6-0c49-4f87-9949-07c7045de9c5")
-	)
-	(segment
 		(start 129.286 52.07)
 		(end 129.286 51.816)
 		(width 0.7)
@@ -9992,6 +9992,14 @@
 		(layer "B.Cu")
 		(net 2)
 		(uuid "deb975a9-4556-4838-ac94-d71c9726eddf")
+	)
+	(segment
+		(start 170.18 55.118)
+		(end 170.18 62.738)
+		(width 1.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "ded7d2aa-e3e6-4207-bcb0-91a773a2516d")
 	)
 	(segment
 		(start 127.508 53.848)
@@ -10018,14 +10026,6 @@
 		(uuid "e79b4a9e-3d92-4d29-8b5f-909477d0e4e3")
 	)
 	(segment
-		(start 172.466 67.31)
-		(end 176.022 67.31)
-		(width 1)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "e9354761-1f87-401a-9763-a2bf1d28d56d")
-	)
-	(segment
 		(start 155.956 62.23)
 		(end 156.718 62.992)
 		(width 0.7)
@@ -10048,6 +10048,22 @@
 		(layer "B.Cu")
 		(net 2)
 		(uuid "f74f9e46-4091-4b2d-b922-7004b7b7ccaf")
+	)
+	(segment
+		(start 170.942 54.356)
+		(end 170.18 55.118)
+		(width 1.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "f9516734-b738-4fc6-b4bf-79b10275b5e7")
+	)
+	(segment
+		(start 170.18 62.738)
+		(end 174.752 67.31)
+		(width 1.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "fbc5b90c-2b1c-49c0-98a4-12247d4dc9e1")
 	)
 	(segment
 		(start 127.508 70.612)
